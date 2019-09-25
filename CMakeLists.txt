@@ -54,8 +54,8 @@ project(lualib)
 		POST_BUILD
 		COMMAND ${CMAKE_COMMAND} -E copy
 		  $<TARGET_FILE:${PROJECT_NAME}>
-		  ${CMAKE_SOURCE_DIR}/builtDependencies/windows/$<CONFIGURATION>/$<TARGET_FILE_NAME:${PROJECT_NAME}>)		
+		  ${CMAKE_SOURCE_DIR}/../builtDependencies/windows/$<CONFIGURATION>/$<TARGET_FILE_NAME:${PROJECT_NAME}>)		
 	endif()
 
 	#copying the headers
-	file(COPY ${HEADER_FILES} DESTINATION ${CMAKE_SOURCE_DIR}/builtDependencies/includes/lua )
+	file(COPY ${HEADER_FILES} DESTINATION ${CMAKE_SOURCE_DIR}/../builtDependencies/includes/lua )
