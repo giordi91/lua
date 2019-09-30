@@ -4,29 +4,31 @@ project(lualib)
 
     #looking for  files
     file(GLOB HEADER_FILES  "*.h")
-	SET(SOURCE_FILES 
-	lapi.c 
-	lcode.c
-	lctype.c 
-	ldebug.c 
-	ldo.c 
-	ldump.c 
-	lfunc.c 
-	lgc.c 
-	llex.c 
-	lmem.c 
-	lobject.c 
-	lopcodes.c 
-	lparser.c 
-	lstate.c 
-	lstring.c 
-	ltable.c 
-	ltm.c 
-	lundump.c 
-	lvm.c 
-	lzio.c 
-	#ltests.o
-	)
+    #file(GLOB SOURCE_FILES "*.c")
+	SET(SOURCE_FILES  onelua.c)
+	#SET(SOURCE_FILES 
+	#lapi.c 
+	#lcode.c
+	#lctype.c 
+	#ldebug.c 
+	#ldo.c 
+	#ldump.c 
+	#lfunc.c 
+	#lgc.c 
+	#llex.c 
+	#lmem.c 
+	#lobject.c 
+	#lopcodes.c 
+	#lparser.c 
+	#lstate.c 
+	#lstring.c 
+	#ltable.c 
+	#ltm.c 
+	#lundump.c 
+	#lvm.c 
+	#lzio.c 
+	##ltests.o
+	#)
 
     include_directories(${CMAKE_CURRENT_SOURCE_DIR} )
 
