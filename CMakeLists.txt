@@ -35,6 +35,8 @@ project(lualib)
 	#making sure to add the common cpp flags, that are defined in the main cpp file
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMMON_CXX_FLAGS}")
 
+	add_compile_definitions(MAKE_LIB)
+
     #adding the lib 
     add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${INCLUDES_FILES})
 
